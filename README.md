@@ -13,7 +13,7 @@ All previous versions are available on the [Releases tab](../../releases).
 
 ## What it is
 
-Drop in any video — H.264, ProRes, or DXV3 — drag points on the curve, export an XML, apply it on a clip in Resolume. That's the whole loop. Built for VJs who got tired of authoring envelopes inside Resolume's clip inspector and wanted something visual.
+Drop in any video — H.264, ProRes, HAP, or DXV3 — drag points on the curve, export an XML, apply it on a clip in Resolume. That's the whole loop. Built for VJs who got tired of authoring envelopes inside Resolume's clip inspector and wanted something visual.
 
 The video player is the same one Glance uses, so DXV3 files open and play instantly — same custom GPU decoder, same color accuracy.
 
