@@ -7,7 +7,7 @@ The source code is private. Bug reports and feature requests are welcome via the
 
 ## Download
 
-Latest release: **[Releases page](../../releases/latest)**
+Latest release: **[Releases page](../../releases/latest)** — CueGlance 1.5.0, rebuilt in Rust (same editor, files and settings as 1.4.1).
 
 All previous versions are available on the [Releases tab](../../releases).
 
@@ -15,18 +15,22 @@ All previous versions are available on the [Releases tab](../../releases).
 
 Drop in any video — H.264, ProRes, HAP, or DXV3 — drag points on the curve, export an XML, apply it on a clip in Resolume. That's the whole loop. Built for VJs who got tired of authoring envelopes inside Resolume's clip inspector and wanted something visual.
 
-The video player is the same one Glance uses, so DXV3 files open and play instantly — same custom GPU decoder, same color accuracy.
+The video player is the same one Glance uses, so DXV and HAP files open and play instantly — same GPU decoders, pixel-exact color.
 
 ## What's in it
 
-- Open any video format Resolume cares about — real DXV3 decoding for the codec you actually deliver shows in
+- Open any video format Resolume cares about — DXV (DXV3, legacy DXV1/2) and every HAP variant on CueGlance's own GPU decoders; H.264, HEVC, ProRes, Motion JPEG and QuickTime Animation through macOS
 - Scrubbable timeline with cue markers; drop a cue at the playhead with a single keystroke (`c`)
 - Interactive envelope canvas — drag points to shape the curve, lock either axis, choose from all 23 Resolume easing types per segment
 - Start and End points pinned where Resolume needs them
 - Color-cycling cue points so they're easy to tell apart
 - Export to Resolume's XML format — drag onto any compatible clip
-- Reads existing CueSync `.cueproj` files; saves your own
+- Reads existing CueSync `.cueproj` files and keeps their CueSync fields; saves your own (a project saved by 1.5.0 opens in 1.4.1 and back)
 - Undo, redo, recent files, custom save folder, dark UI that looks like your other VJ tools
+
+## Known issues
+
+- Dropping a video can crash CueGlance when the app it was dragged from quits right after the drop (a macOS drag-and-drop bug, reported to Apple; drag from Finder or use File ▸ Load Video… instead). Details: [issue #1](../../issues/1).
 
 ## Installing
 
