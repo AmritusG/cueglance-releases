@@ -7,7 +7,7 @@ The source code is private. Bug reports and feature requests are welcome via the
 
 ## Download
 
-Latest release: **[Releases page](../../releases/latest)** — CueGlance 1.5.0, rebuilt in Rust (same editor, files and settings as 1.4.1).
+Latest release: **[Releases page](../../releases/latest)** — CueGlance 1.5.1 (loop off with sound stops at the end; faster DXV decoding), rebuilt in Rust since 1.5.0 (same editor, files and settings as 1.4.1).
 
 All previous versions are available on the [Releases tab](../../releases).
 
